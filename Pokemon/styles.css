@@ -92,6 +92,16 @@ p{
     
 }
 
+.link{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: white;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 4em;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
@@ -108,7 +118,7 @@ p{
         background-image: url("bigpokeballls.jpg");
     }
     
-    .title{
+    .title, .link{
 
         margin: 30px;
     }
