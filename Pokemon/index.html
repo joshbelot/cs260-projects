@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Online Pokedex</title>
+        <link rel='stylesheet' href='styles.css'/>
+        <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    </head>
+
+
+ 
+<body>
+    
+    <div class = "title">
+        <p class = "p-title" >Welcome to Your Online Pokédex!</p>
+
+        <form>
+            Enter the Name of a Pokémon: 
+            <br>
+            <input type="text" id="pokeID" value="">
+            <br>
+            <input id="pokeButton" type="button" value="Submit">
+        </form>
+    </div>
+    
+    <div class = "content">
+    
+        <div id = pokemon><img src="pokemon.jpg"></div>
+        <div id = normal><img src="pokeball.jpg"></div>
+        <div id = shiny><img src="pokeball.jpg"></div>
+    </div>
+    
+        <div>
+            <a href = ""
+        </div>
+
+    
+    <script>
+     document.getElementById("pokeButton").addEventListener("click", function(event) {
+          var myurl = "https://cors-anywhere.herokuapp.com";
+          myurl += "/https://pokeapi.co/api/v2/pokemon/";
+          console.log(document.getElementById("pokeID").value);
+          myurl += document.getElementById("pokeID").value.toLowerCase()
+          console.log(myurl);
+          fetch(myurl, {mode: 'cors'})
+            .then(function(response) {
+              return response.json();
+            }).then(function(json) {
+              console.log(json);
+
+                let everything = '<img src="'+json.sprites.other["official-artwork"]["front_default"]+'"></img>';
+                everything += '<p> <strong>' + json.name.charAt(0).toUpperCase() + json.name.slice(1) + '</strong> </p>'
+                let types = "Type(s): "
+                for (let i = 0; i < json.types.length; ++i){
+                    types += json.types[i].type.name
+                    if (i < (json.types.length - 1)){
+                        types += ", "
+                    }
+                }
+                everything += '<p>' + types + '</p>'
+                everything += '<p> Weight: ' + json.weight + ' pounds </p>'
+                everything += '<p> Height: ' + json.height + ' feet </p>'
+                
+                let moves = "Possible Moves: "
+                for (let i = 0; i < json.moves.length; ++i){
+                    moves += json.moves[i].move.name
+                    if (i < (json.moves.length - 1)){
+                        moves += ", "
+                    }
+                }
+                
+                everything += '<p id="moves">' + moves + '</p>'
+                
+                document.getElementById("pokemon").innerHTML = everything;
+
+                let normal = ""
+                normal += "<p> Normal Version </p>"
+                normal += '<img src="'+json.sprites.front_default+'"></img>';
+                document.getElementById("normal").innerHTML = normal;
+                
+                let shiny = ""
+                shiny += "<p> Shiny Version </p>"
+                shiny += '<img src="'+json.sprites.front_shiny+'"></img>';
+                document.getElementById("shiny").innerHTML = shiny;
+            }).catch(function(){
+                let error = "<p> Pokémon not found! Please check your spelling or search for a different Pokémon."
+                document.getElementById("pokemon").innerHTML = error;
+                let img1 = '<img src="pokemon.jpg">';
+                document.getElementById("normal").innerHTML = img1;
+                let img2 = '<img src="pokeball.jpg">';
+                document.getElementById("shiny").innerHTML = img2;
+            })
+            
+     });
+     
+     
+     
+    </script>
+    
+    
+
+
+</body>
+</html>

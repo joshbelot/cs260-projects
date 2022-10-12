@@ -1,0 +1,138 @@
+body{
+    background-image: url("pokeballs.jpg");
+}
+
+img {
+    width: 100%;
+    background-color: white;
+  
+    border-radius: 4em;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 4em;
+    margin: 10px;
+}
+
+.p-title{
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+form{
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+
+input{
+    height:  50px;
+    width:270px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#pokemon{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: white;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 4em;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    font-size: 30px;
+    text-align: center;
+}
+
+#moves{
+    font-size: 20px;
+    text-align: center;
+}
+
+#normal{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: white;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 4em;
+}
+
+#shiny{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: white;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 4em;
+}
+
+#pokeButton{
+    font-size: 30px;
+    height:  50px;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body{
+        background-image: url("bigpokeballls.jpg");
+    }
+    
+    .title{
+
+        margin: 30px;
+    }
+    
+    
+    .content{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #pokemon{
+        width: 30%;
+    }
+    
+    #normal{
+        width: 25%;
+        height: 70%;
+    }
+    
+    #shiny{
+        width: 25%;
+        height: 70%;
+    }
+        
+    
+
+}
