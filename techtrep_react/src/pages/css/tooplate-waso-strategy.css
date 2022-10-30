@@ -379,7 +379,7 @@ strong {
 }
 
 .section-hero {
-  background-image: url('../images/glossary.jpg');
+  background-image: url('../../images/glossary.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

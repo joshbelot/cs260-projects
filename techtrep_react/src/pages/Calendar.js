@@ -1,3 +1,5 @@
+import doc from "../documents/2022-23 Calendar.pdf"
+
 const Calendar = () => {
   return (
       <>
@@ -21,7 +23,7 @@ const Calendar = () => {
         
                 
                 <div className = "pdf-view">
-                    <iframe src={require("./documents/2022-23 Calendar.pdf")} width="100%" height="1000px" title = "calendar">
+                    <iframe src={doc} width="100%" height="1000px" title = "calendar">
                     </iframe>
                 </div>
                 

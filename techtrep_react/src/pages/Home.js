@@ -1,9 +1,11 @@
-import "./css/bootstrap-icons.css"
-import "./css/bootstrap.min.css"
-import "./css/magnific-popup.css"
-import "./css/styles.css"
-import "./css/tooplate-waso-strategy.css"
-
+import "./css/bootstrap-icons.css";
+import "./css/bootstrap.min.css";
+import "./css/magnific-popup.css";
+import "./css/styles.css";
+import "./css/tooplate-waso-strategy.css";
+import homeschool1 from "../images/homeschool1.jpeg";
+import homeschool2 from "../images/homeschool2.jpg";
+import family_learning_small from "../images/family_learning_small.jpg";
 
 
 const Home = () => {
@@ -44,7 +46,7 @@ const Home = () => {
                                     </div>
 
                                     <div className="carousel-image-wrap">
-                                        <img src={require('./images/homeschool1.jpeg')} className="img-fluid carousel-image" alt=""></img>
+                                        <img src={homeschool1} className="img-fluid carousel-image" alt="Homeschool1"></img>
                                     </div>
                                 </div>
 
@@ -71,7 +73,7 @@ const Home = () => {
                                     </div>
                                     
                                     <div className="carousel-image-wrap">
-                                        <img src={require('./images/homeschool2.jpg')} className="img-fluid carousel-image" alt=""></img>
+                                        <img src={homeschool2.jpg} className="img-fluid carousel-image" alt=""></img>
                                     </div>
                                 </div>
 
@@ -98,7 +100,7 @@ const Home = () => {
 
                         <div className="col-lg-6 col-12 mb-5 mb-lg-0">
                             <div className="about-image-wrap h-100">
-                                <img src={require('./images/family_learning_small.jpg')} className="img-fluid about-image" alt=""></img>
+                                <img src={family_learning_small} className="img-fluid about-image" alt=""></img>
                             </div>
                         </div>
 

@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import techtrep from "../images/tech-trep-academy.png";
 
 
 
@@ -23,7 +23,7 @@ const Layout = () => {
             <div className="container menu-container">
                 
                 <div href="#" className="navbar-brand">
-                    <div className = 'logo-container'><img className = 'logo' src={require("./images/tech-trep-academy.png")}></img></div>
+                    <div className = 'logo-container'><img className = 'logo' src={techtrep}></img></div>
                     <div className = 'main-title'>Idaho Parent Resources</div>
                 </div>
 

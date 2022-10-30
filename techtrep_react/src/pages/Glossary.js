@@ -49,7 +49,7 @@ const Glossary = () => {
                         <div className="g-item">
                             <p><a className="g-link" 
                             href="https://id.techtrepacademy.com/courses/" target="_blank">
-                            <u><strong>Canvas-based Tech className</strong></u></a> - Online Tech Trep Academy 
+                            <u><strong>Canvas-based Tech Class</strong></u></a> - Online Tech Trep Academy 
                             Tech and Entrepreneurship elective courses accessed 
                             by the student directly inside of Canvas</p>
                         </div>

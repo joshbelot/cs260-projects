@@ -1,3 +1,7 @@
+import lgoal from '../images/learning-goal.jpg';
+import infocenter from '../images/infocenter.jpg';
+import ihla from '../images/ihla.jpg';
+
 const NewLearning = () => {
   return (
       <>
@@ -59,7 +63,7 @@ const NewLearning = () => {
                                         <div className="about-info learn-res">
                                             
                                             <div className= "l-img-container">
-                                                <img className = "l-img" src={require('./images/learning-goal.jpg')}></img>
+                                                <img className = "l-img" src={lgoal}></img>
                                             </div>
                                         
 
@@ -79,7 +83,7 @@ const NewLearning = () => {
                                         <div className="about-info learn-res">
                                             
                                             <div className= "l-img-container">
-                                                <img className = "l-img" src={require('./images/infocenter.jpg')}></img>
+                                                <img className = "l-img" src={infocenter}></img>
                                             </div>
                                         
                                             <a className="custom-btn btn custom-bg-secondary l-button" href="https:
@@ -98,7 +102,7 @@ const NewLearning = () => {
                                         <div className="about-info learn-res">
                                             
                                             <div className= "l-img-container">
-                                                <img className = "l-img" src={require('./images/ihla.jpg')}></img>
+                                                <img className = "l-img" src={ihla}></img>
                                             </div>
                                         
 
