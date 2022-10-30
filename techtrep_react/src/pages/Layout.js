@@ -29,23 +29,23 @@ const Layout = () => {
 
                     <Nav variant="pills" onSelect={(key) => setCurrentTab(key)} activeKey={currentTab} onSelect={(key) => setCurrentTab(key)}>
                       <Nav.Item>
-                        <Nav.Link href="/" eventKey = "first">
-                          Home
+                        <Nav.Link eventKey = "first">
+                          <Link to="/">Home</Link>
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second" href="/calendar">
-                          Calendar
+                        <Nav.Link eventKey="second" >
+                           <Link to="/calendar">Calendar</Link>
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third"  href="/n-learning">
-                          New Learning
+                        <Nav.Link eventKey="third"  >
+                          <Link to="/n-learning"> New Learning </Link>
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey= "fourth"  href="/glossary">
-                          Glossary
+                        <Nav.Link eventKey= "fourth" >
+                          <Link to="/glossary"> Glossary </Link>
                         </Nav.Link>
                       </Nav.Item>
                       

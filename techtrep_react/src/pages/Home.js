@@ -224,7 +224,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <a className = "foot-color" href = "">Github Link</a>
+                <a className = "foot-color" href = "https://github.com/joshbelot/cs260-projects/tree/main/techtrep_react">Github Link</a>
             </div>
         </footer>
         </> 
