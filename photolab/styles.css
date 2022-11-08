@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: #085797;
+}
+
+.nav-link{
+  color: #D6E9FE;
+}
+
+.nav a:hover { color: red !important; }
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  padding:5px
+}
+
+
+.header {
+  color: #085797;
+  background-color: #D6E9FE;
+  width: 100%;
+  height: auto;
+  font-size: 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin:5px;
+}
+
+
+
+.main-photo {
+  width:100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin:5px;
+}
+
+.main-img, .photo{
+  max-width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.intro{
+  color: #085797;
+  background-color: #D6E9FE;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:5px;
+}
+
+.contact{
+  color: #085797;
+  background-color: #D6E9FE;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-info{
+  color: #085797;
+  background-color: #D6E9FE;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.paragraph{
+  color: #085797;
+  background-color: #D6E9FE;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin:0px;
+  text-indent: 30px;
+}
+
+.me-photo {
+  width:100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin:5px;
+}
+
+.me{
+  max-width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.masonry {
+  display: flex;
+  flex-flow: row wrap;
+  
+  width: 100%;
+  justify-content: center;
+}
+
+.photo{
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+  max-width: 100%;
+  margin: 8px;
+  justify-content: center;
+}
+.box{
+  display: flex;
+  justify-content: center;
+}
+
+.reviews{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+
+  
+}
+
+.review{
+  color: #085797;
+  background-color: #D6E9FE;
+  text-align: left;
+  text-indent: 30px;
+  width: 100%
+}
+.rating{
+  background-color:#085797;
+}
+.stars{
+  width: 100px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  
+  .page {
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-photo{
+  width:40%;
+
+  }
+  
+  .intro{
+  width: 60%;
+  align-items: center;
+  margin:20px;
+  font-size: 120%
+  }
+  
+  .all-reviews{
+    width:50%;
+  }
+  
+  .about-me{
+    width:40%;
+  }
+}
