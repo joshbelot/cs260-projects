@@ -48,6 +48,39 @@ app.get('/api/flashcards', async (req, res) => {
   try {
     console.log("Getting all flashcards")
     let flashcards = await Flashcard.find();
+    console.log(flashcards)
+    res.send({flashcards: flashcards});
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(500);
+  }
+});
+
+app.get('/api/flashcards/name/:name', async (req, res) => {
+  try {
+    console.log("Getting flashcards by name")
+    console.log(req.params)
+    let name = req.params.name;
+    let flashcards = await Flashcard.find({creator:name});
+    
+    res.send({flashcards: flashcards});
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(500);
+  }
+});
+
+app.get('/api/flashcards/subject/:subject', async (req, res) => {
+  try {
+    console.log("Getting flashcards by subject")
+    console.log("SUBJECT IS")
+    console.log(req.params)
+    let sub = req.params.subject;
+    console.log(sub)
+    
+    let flashcards = await Flashcard.find({subject:sub});
+    console.log("PRINT CARDS")
+    console.log(flashcards)
     res.send({flashcards: flashcards});
   } catch (error) {
     console.log(error);
@@ -56,6 +89,7 @@ app.get('/api/flashcards', async (req, res) => {
 });
 
 app.post('/api/flashcards', async (req, res) => {
+    console.log("Posting new flashcard")
     const flashcard = new Flashcard({
     creator: req.body.creator,
     subject: req.body.subject,
@@ -94,7 +128,6 @@ const userSchema = new mongoose.Schema({
   major: String,
   school: String,
   year: String,
-  flashcards: Array,
 });
 
 userSchema.virtual('id')
@@ -107,7 +140,7 @@ userSchema.set('toJSON', {
   virtuals: true
 });
 
-/*const User = mongoose.model('user', userSchema);
+const User = mongoose.model('user', userSchema);
 
 app.get('/api/users', async (req, res) => {
   try {
@@ -125,7 +158,6 @@ app.post('/api/users', async (req, res) => {
       major: req.body.major,
       school: req.body.school,
       year: req.body.year,
-      flashcards: req.body.flashcards,
   });
   try {
     await user.save();
@@ -146,6 +178,6 @@ app.delete('/api/users/:id', async (req, res) => {
     console.log(error);
     res.sendStatus(500);
   }
-});*/
+});
 
-app.listen(3000, () => console.log('Server listening on port 3000!'));
+app.listen(3001, () => console.log('Server listening on port 3001!'));
