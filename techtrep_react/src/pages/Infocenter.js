@@ -1,42 +1,70 @@
-import doc from "../documents/2022-23 Calendar.pdf"
+const Infocenter = () => {
+  return (<>
+            <main>
 
-const Calendar = () => {
-  return (
-      <>
-      <main>
-            <section className="hero section-hero section-padding calendar">
+            <section className="hero section-hero section-padding infocenter">
                 <div className="container">
                     <div className="row">
 
                         <div className="col-lg-6 col-12 text-center mx-auto">
                             <div className="section-hero-text">
 
-                                <h1 className="text-white calendar-text">Calendar</h1>
+                                <h1 className="text-white">Tech Trep InfoCenter & Submission Tips</h1>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </section>
-        
-            <section className="pdf">
-        
-                
-                <div className = "pdf-view">
-                    <iframe src={require("../documents/2022-23 Calendar.pdf")} alt = "Calendar" width="100%" height="1000px" title = "calendar">
-                    </iframe>
+            
+            <section className="about section-padding" id="section_2">
+                <div className="container">
+                    <div className="row l-row">
+
+                        <div className="col-lg-6 col-12 d-flex flex-column l-col">
+                            <div className="about-thumb bg-white shadow-lg">
+                                
+                                <div className="infocenter-videos lang">
+                                    <div className="infocenter-vid1">
+                                        <iframe width="334" height="266" 
+                                            src="https://www.youtube.com/embed/mOUppGI7w4U" 
+                                            title="InfoCenter Basics-How to use Google 
+                                            Drive to submit Learning assessments." 
+                                            frameborder="0" allow="accelerometer; 
+                                            autoplay; clipboard-write; encrypted-media; 
+                                            gyroscope; picture-in-picture" allowfullscreen>
+                                        </iframe>
+                                        
+                                        <div className = "infocenter-link">
+                                            <a href = "https://www.youtube.com/watch?v=mOUppGI7w4U" target = "blank" > <h2>Google Drive for Submissions Tutorial</h2> </a>
+                                        </div>
+                                    </div>
+                                    <div className="infocenter-vid2">
+                                        <iframe width="334" height="264" 
+                                            src="https://www.youtube.com/embed/sisbJmScus8" 
+                                            title="Google Drive App for Assessments Tutorial" 
+                                            frameborder="0" allow="accelerometer; autoplay; 
+                                            clipboard-write; encrypted-media; gyroscope; 
+                                            picture-in-picture" allowfullscreen>
+                                        </iframe>
+                                        <div className = "infocenter-link">
+                                            <a href = "https://www.youtube.com/embed/sisbJmScus8" target = "blank" > <h2>Google Drive App for Submissions Tutorial</h2> </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
             </section>
-
-
 
         </main>
 
         <footer className="site-footer">
             <div className="foot">
                 <div className="f-column">
-                    <p className = "foot-color">Learn More:</p>
+                    <p className = 'foot-color'>Learn More:</p>
                     
                     <ul>
                         <li><a className = "foot-color" href="https://id.techtrepacademy.com/" target="_blank"><u>Idaho Tech Trep Academy Website</u></a></li>
@@ -77,7 +105,8 @@ const Calendar = () => {
             </div>
         </footer>
         </>
+        
     );
 };
 
-export default Calendar;
+export default Infocenter;

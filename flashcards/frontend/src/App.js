@@ -211,6 +211,7 @@ function App() {
               return <User item = {item} key = {item.id} fetchUsers = {fetchUsers}/>
             })}
           </div>
+          <a href = "https://github.com/joshbelot/cs260-projects/tree/main/flashcards"> GITHUB </a>
         </div>
       </div>
         
@@ -277,6 +278,7 @@ function App() {
             <input type="submit" value="Show all cards" />
           </form>
         </div>
+        
       </div>
       
       <div className = "DisplayCard">

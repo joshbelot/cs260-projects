@@ -21,11 +21,6 @@ const NewLearning = () => {
                     </div>
                 </div>
             </section>
-            
-        
-
-
-
 
         </main>
         
@@ -63,7 +58,7 @@ const NewLearning = () => {
                                         <div className="about-info learn-res">
                                             
                                             <div className= "l-img-container">
-                                                <img className = "l-img" src={lgoal}></img>
+                                                <img className = "l-img" src={require('../images/learning-goal.jpg')} alt = "Learning goal"></img>
                                             </div>
                                         
 

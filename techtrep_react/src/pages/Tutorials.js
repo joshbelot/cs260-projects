@@ -1,42 +1,30 @@
-import doc from "../documents/2022-23 Calendar.pdf"
+const Tutorials = () => {
+  return (<>
+            <main>
 
-const Calendar = () => {
-  return (
-      <>
-      <main>
-            <section className="hero section-hero section-padding calendar">
+            <section className="hero section-hero section-padding infocenter">
                 <div className="container">
                     <div className="row">
 
                         <div className="col-lg-6 col-12 text-center mx-auto">
                             <div className="section-hero-text">
 
-                                <h1 className="text-white calendar-text">Calendar</h1>
+                                <h1 className="text-white">Progress Report Tutorials</h1>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </section>
-        
-            <section className="pdf">
-        
-                
-                <div className = "pdf-view">
-                    <iframe src={require("../documents/2022-23 Calendar.pdf")} alt = "Calendar" width="100%" height="1000px" title = "calendar">
-                    </iframe>
-                </div>
-                
-            </section>
-
-
+            
+            
 
         </main>
 
         <footer className="site-footer">
             <div className="foot">
                 <div className="f-column">
-                    <p className = "foot-color">Learn More:</p>
+                    <p className = 'foot-color'>Learn More:</p>
                     
                     <ul>
                         <li><a className = "foot-color" href="https://id.techtrepacademy.com/" target="_blank"><u>Idaho Tech Trep Academy Website</u></a></li>
@@ -77,7 +65,8 @@ const Calendar = () => {
             </div>
         </footer>
         </>
+        
     );
 };
 
-export default Calendar;
+export default Tutorials;
