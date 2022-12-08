@@ -47,7 +47,7 @@ const Layout = ({ setIsAuth, isAuth }) => {
                       
                       <Nav>
                           <Nav.Item>
-                              <Nav.Link eventKey = "first">
+                            <Nav.Link eventKey = "first">
                               <Link to="/">Home</Link>
                             </Nav.Link>
                           </Nav.Item>

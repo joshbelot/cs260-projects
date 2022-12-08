@@ -6,7 +6,7 @@ import "./css/tooplate-waso-strategy.css";
 import homeschool1 from "../images/homeschool1.jpeg";
 import homeschool2 from "../images/homeschool2.jpg";
 import family_learning_small from "../images/family_learning_small.jpg";
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -145,7 +145,7 @@ const Home = () => {
                                         <div className="about-info">
                                             <h5 className="text-white mb-4">Confused about a word or phrase? Check out our glossary</h5>
 
-                                            <a className="custom-btn btn custom-bg-secondary" href="html/glossary.html">Glossary</a>
+                                            <Link to="/glossary" className="custom-btn btn custom-bg-secondary" > Glossary </Link>
                                         </div>
                                     </div>
                                 </div>
